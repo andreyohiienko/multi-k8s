@@ -7,6 +7,8 @@
 - Traffic -> Ingress service -> Node -> Cluster IP Service -> Deployment -> Pod
 - Pod -> ClusterIP -> Pod
 - Persistent Volume Claim (PVC)
+- Volume - some type of mechanism that allows a container to access a filesystem outside itself
+- Volume (in Kubernetes) - An object that allows a container to store data at the pod level
 
 ## Commands
 - kubectl apply -f \<folder>
