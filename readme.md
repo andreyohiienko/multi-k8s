@@ -1,6 +1,7 @@
 # MULTI-K8S
 
 ## Important takeaways
+- Yaml file configure object
 - **CluserIP** exposes a set of pods to other objects in the cluster
 - **NodePort** exposes a set of pods to outside world (only good for dev purposes!!!)
 
