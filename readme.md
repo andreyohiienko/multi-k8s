@@ -6,6 +6,7 @@
 - **NodePort** exposes a set of pods to outside world (only good for dev purposes!!!)
 - Traffic -> Ingress service -> Node -> Cluster IP Service -> Deployment -> Pod
 - Pod -> ClusterIP -> Pod
+- Persistent Volume Claim (PVC)
 
 ## Commands
 - kubectl apply -f \<folder>
