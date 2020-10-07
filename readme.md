@@ -13,3 +13,4 @@
 
 ## Commands
 - kubectl apply -f \<folder> 
+- kubectl get pvc
