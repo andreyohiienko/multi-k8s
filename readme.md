@@ -12,4 +12,4 @@
 - Persistent Volume locates outside of a Pod
 
 ## Commands
-- kubectl apply -f \<folder>
+- kubectl apply -f \<folder> 
