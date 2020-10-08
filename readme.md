@@ -10,6 +10,7 @@
 - Volume - some type of mechanism that allows a container to access a filesystem outside itself
 - Volume (in Kubernetes) - An object that allows a container to store data at the pod level
 - Persistent Volume locates outside of a Pod
+- Ingress - exposes a set of services to the outside world
 
 ## Commands
 - kubectl apply -f \<folder> 
