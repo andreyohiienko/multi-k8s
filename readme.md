@@ -12,6 +12,7 @@
 - Persistent Volume locates outside of a Pod
 - Ingress - exposes a set of services to the outside world
 - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps)
+- [Kubernetes dashboard setup](https://github.com/kubernetes/dashboard/tree/master/docs)
 
 ## Commands
 - kubectl apply -f \<folder> 
