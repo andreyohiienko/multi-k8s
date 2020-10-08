@@ -11,6 +11,7 @@
 - Volume (in Kubernetes) - An object that allows a container to store data at the pod level
 - Persistent Volume locates outside of a Pod
 - Ingress - exposes a set of services to the outside world
+- [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps)
 
 ## Commands
 - kubectl apply -f \<folder> 
