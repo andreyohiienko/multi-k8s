@@ -14,3 +14,9 @@
 ## Commands
 - kubectl apply -f \<folder> 
 - kubectl get pvc
+- kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+  - secret - type of object
+  - generic - type of secret (tls, docker-registry)
+  - pgpassword - secret name
+  - --from-literal - not from file
+  - KEY=value
