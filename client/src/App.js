@@ -11,9 +11,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Fib calculator version Kubernetes!!!</h1>
+          <h1 className="App-title">Fib calculator</h1>
           <Link to="/">Home test</Link>
-          <Link to="/otherpage">Other page test</Link>
+          <Link to="/otherpage">Other page</Link>
         </header>
         <Route exact path="/" component={Fib} />
         <Route exact path="/otherpage" component={OtherPage} />
