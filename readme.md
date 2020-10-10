@@ -39,3 +39,8 @@
 - curl -LO https://git.io/get_helm.sh
 - chmod 700 get_helm.sh
 - ./get_helm.sh 
+
+### Assigning Tiller a service account
+- ```kubectl create serviceaccount --namespace kube-system tiller``` - create a new service account called tiller in the kube-system namespace
+- ```kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller``` - create a new clusterrolebinding with the role 'cluster-admin' and assign it to service account 'tiller'
+- helm init --service-account tiller --upgrade
