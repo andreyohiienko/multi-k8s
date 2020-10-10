@@ -23,5 +23,11 @@
   - pgpassword - secret name
   - --from-literal - not from file
   - KEY=value
+
+### Running Travis CLI in a container
 - docker run -it -v ${pwd}:/app ruby:2.3 sh - Travis CLI requires ruby
 - gem install travis - install ruby in container
+- travis login
+- copy json file into the 'volumed' directory so we can use it in the container
+- travis encrypt-file service-account.json -r andreyohiienko/multi-k8s
+- DELETE ORIGINAL service-account.json
