@@ -23,3 +23,5 @@
   - pgpassword - secret name
   - --from-literal - not from file
   - KEY=value
+- docker run -it -v ${pwd}:/app ruby:2.3 sh - Travis CLI requires ruby
+- gem install travis - install ruby in container
