@@ -13,6 +13,7 @@
 - Ingress - exposes a set of services to the outside world
 - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps)
 - [Kubernetes dashboard setup](https://github.com/kubernetes/dashboard/tree/master/docs)
+- [Helm](https://github.com/helm/helm)
 
 ## Commands
 - kubectl apply -f \<folder> 
@@ -31,3 +32,8 @@
 - copy json file into the 'volumed' directory so we can use it in the container
 - travis encrypt-file service-account.json -r andreyohiienko/multi-k8s
 - DELETE ORIGINAL service-account.json
+
+### Helm v2 Update
+- curl -LO https://git.io/get_helm.sh
+- chmod 700 get_helm.sh
+- ./get_helm.sh 
