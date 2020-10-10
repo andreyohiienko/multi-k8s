@@ -44,3 +44,7 @@
 - ```kubectl create serviceaccount --namespace kube-system tiller``` - create a new service account called tiller in the kube-system namespace
 - ```kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller``` - create a new clusterrolebinding with the role 'cluster-admin' and assign it to service account 'tiller'
 - helm init --service-account tiller --upgrade
+
+### Ingress-Nginx with Helm
+- helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx/
+- helm install --name ingress-nginx ingress-nginx/ingress-nginx --set rbac.create=true
