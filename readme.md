@@ -14,6 +14,8 @@
 - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps)
 - [Kubernetes dashboard setup](https://github.com/kubernetes/dashboard/tree/master/docs)
 - [Helm](https://github.com/helm/helm)
+- Tiller
+- Role Based Access Control (RBAC)
 
 ## Commands
 - kubectl apply -f \<folder> 
