@@ -11,9 +11,9 @@ before_install:
 - source $HOME/google-cloud-sdk/path.bash.inc
 - gcloud components update kubectl
 - gcloud auth activate-service-account --key-file service-account.json
-- gcloud config set project multi-k8s-292015
-- gcloud config set compute/zone europe-north1-a
-- gcloud container  clusters get-credentials multi-cluster
+- gcloud config set project multi-k8s-292015 # run in cloud shell for new project
+- gcloud config set compute/zone europe-north1-a # run in cloud shell for new project
+- gcloud container clusters get-credentials multi-cluster # run in cloud shell for new project
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker build -t andreyohiienko/react-test -f ./client/Dockerfile.dev ./client
 
