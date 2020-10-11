@@ -1,5 +1,9 @@
 # MULTI-K8S
 
+## Issues
+- [ ] Issue with travis decryption
+- [ ] Issue with Google Cloud files update
+
 ## Important takeaways
 - Yaml file configure object
 - **CluserIP** exposes a set of pods to other objects in the cluster
