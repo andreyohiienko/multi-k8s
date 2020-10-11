@@ -13,7 +13,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Fib calculator version Kubernetes</h1>
           <Link to="/">Home</Link>
-          <Link to="/otherpage">Other page</Link>
+          <Link to="/otherpage">Other page test</Link>
         </header>
         <Route exact path="/" component={Fib} />
         <Route exact path="/otherpage" component={OtherPage} />
