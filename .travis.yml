@@ -27,4 +27,4 @@ deploy:
     branch: master
 
 after_deploy:
-- docker rollout restart deployment/client-deployment
+- kubectl rollout restart deployment/client-deployment
