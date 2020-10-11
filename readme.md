@@ -2,7 +2,8 @@
 
 ## Issues
 - [ ] Issue with travis decryption
-- [ ] Issue with Google Cloud files autoupdate
+- [x] Issue with Google Cloud files autoupdate
+- [ ] Does not have minimum availability (postgres-deployment)
 
 ## Important takeaways
 - Yaml file configure object
