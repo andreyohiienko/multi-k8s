@@ -6,12 +6,24 @@ build:
   artifacts:
   - image: andreyohiienko/multi-client
     context: client # ref to folder
-  docker:
-    dockerfile: Dockerfile.dev
-  sync:
-    '**/*.js': .
-    '**/*.css': .
-    '**/*.html': .
+    docker:
+      dockerfile: Dockerfile.dev
+    sync:
+      '**/*.js': .
+      '**/*.css': .
+      '**/*.html': .
+  - image: andreyohiienko/multi-server
+    context: server
+    docker:
+      dockerfile: Dockerfile.dev
+    sync:
+      '**/*.js': .
+  - image: andreyohiienko/multi-worker
+    context: worker
+    docker:
+      dockerfile: Dockerfile.dev
+    sync:
+      '**/*.js': .
 deploy:
   kubectl:
     manifests:
