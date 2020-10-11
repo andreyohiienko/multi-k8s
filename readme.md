@@ -2,7 +2,7 @@
 
 ## Issues
 - [ ] Issue with travis decryption
-- [ ] Issue with Google Cloud files update
+- [ ] Issue with Google Cloud files autoupdate
 
 ## Important takeaways
 - Yaml file configure object
