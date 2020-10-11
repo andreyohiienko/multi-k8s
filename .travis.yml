@@ -17,6 +17,9 @@ before_install:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker build -t andreyohiienko/react-test -f ./client/Dockerfile.dev ./client
 
+after_success:
+- docker rollout restart deployment/client-deployment
+
 script:
 - docker run -e CI=true andreyohiienko/react-test npm run test
 
