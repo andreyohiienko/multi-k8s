@@ -53,3 +53,22 @@
 ### Ingress-Nginx with Helm
 - helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx/
 - helm install --name ingress-nginx ingress-nginx/ingress-nginx --set rbac.create=true
+
+## Cert Manager Installation
+- kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.11/deploy/manifests/00-crds.yaml
+- kubectl create namespace cert-manager
+- helm repo add jetstack https://charts.jetstack.io
+- helm repo add jetstack https://charts.jetstack.io
+- helm repo update
+- Helm v2:
+  - helm install \
+    --name cert-manager \
+    --namespace cert-manager \
+    --version v0.11.0 \
+    jetstack/cert-manager
+- Helm v3:
+  - helm install \
+    cert-manager \
+    --namespace cert-manager \
+    --version v0.11.0 \
+    jetstack/cert-manager
