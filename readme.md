@@ -31,6 +31,7 @@
   - pgpassword - secret name
   - --from-literal - not from file
   - KEY=value
+- docker system prune - clearing the build cache
 
 ### Running Travis CLI in a container
 - ```docker run -it -v ${pwd}:/app ruby:2.3 sh``` - Travis CLI requires ruby
